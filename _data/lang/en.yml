@@ -171,9 +171,9 @@ privacy-policy:
 
 # constants to be replaced for
 constants:
-  greetings: Hello
-  welcome: Welcome
-  sample: Sample
+  greetings: Thank you for visiting #Hello 
+  welcome: Nice to meet you #Welcome
+  sample: Ohyeon Kwon
 
 # for contact form
 contact_form:
