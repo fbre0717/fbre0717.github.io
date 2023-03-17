@@ -38,5 +38,7 @@ img: ":about.jpg"
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}
 
-# 예쁘게 웃고 넘겨버릴래
+# 영원히 기억해 약속
 블로그 열심히 해보겠습니다.
+
+[20185014CV](https://github.com/fbre0717/fbre0717.github.io/blob/main/20185014CV)
