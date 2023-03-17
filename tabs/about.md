@@ -38,5 +38,5 @@ img: ":about.jpg"
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}
 
-# 안녕하세요.
+# 예쁘게 웃고 넘겨버릴래
 블로그 열심히 해보겠습니다.
