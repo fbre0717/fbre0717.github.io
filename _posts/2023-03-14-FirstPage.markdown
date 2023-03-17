@@ -11,7 +11,7 @@ category: 여러가지
 # multiple tag entries are possible
 tags: [기타]
 # thumbnail image for post
-img: ":post_pic3.jpg"
+img: ""
 # disable comments on this page
 #comments_disable: true
 
@@ -43,7 +43,7 @@ date: 2023-03-14 15:21:03 +0900
 
 <!-- outline-start -->
 
-첫 게시물입니다.
+썸네일에 들어갈 내용 : 첫 게시물입니다.
 
 <!-- outline-end -->
 
@@ -59,3 +59,5 @@ date: 2023-03-14 15:21:03 +0900
 for i in range(5, 10):
   print(i)
 ```
+
+근데 색깔 하이라이팅은 왜 적용이 안되는지 모르겠습니다.
