@@ -43,7 +43,7 @@ date: 2023-03-14 15:21:03 +0900
 
 <!-- outline-start -->
 
-썸네일에 들어갈 내용 : 첫 게시물입니다.
+안누르면 인생절반손해 볼 것 같은 키워드
 
 <!-- outline-end -->
 
@@ -51,13 +51,19 @@ date: 2023-03-14 15:21:03 +0900
 - 첫 시작
   - 진짜 첫 시작
 
-처음으로 포스트를 작성해보았습니다.
+처음으로 포스트를 작성해보았다.
 
-이것인 인라인 코드 'print("Hello)'
+이것인 인라인 코드 '인라인 코드 블럭'
 
 ```python
 for i in range(5, 10):
   print(i)
+```
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
 ```
 
 근데 색깔 하이라이팅은 왜 적용이 안되는지 모르겠습니다.
