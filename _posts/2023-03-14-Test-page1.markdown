@@ -40,8 +40,9 @@ date: 2023-03-14 15:21:03 +0900
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}
-하하호호
-{%- include util/auto-content-generator.liquid -%}
+# 안녕하세요.
+- 첫 시작
+  - 진짜 첫 시작
 
 <!-- outline-start -->
 안녕하세요
