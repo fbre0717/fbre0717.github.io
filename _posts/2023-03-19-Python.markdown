@@ -16,7 +16,7 @@ img: ""
 #comments_disable: true
 
 # publish date
-date: 2022-03-19 19:11:06 +0900
+date: 2023-03-19 20:00:00 +0900
 
 # seo
 # if not specified, date will be used.
@@ -41,11 +41,11 @@ date: 2022-03-19 19:11:06 +0900
 
 <!-- outline-start -->
 
-Python 함수 정리
+Python 콜론(:), 화살표(->), with open as, assert
 
 <!-- outline-end -->
 
-# Python 함수 정리
+# Python 함수
 
 1. 콜론(:), 화살표(->)
 ```python
@@ -67,13 +67,11 @@ with open("abc.txt") as file:
 
 3. assert [조건식], [메시지]
 조건식이 True면 메시지를 출력하지 않고, False라면 AssertionError와 함께 메시지를 출력한다.
-
 ```python
 a = 1
 assert a == 1, "HH"
 ```
 이 경우 조건이 True이기 때문에 메시지를 출력하지 않는다.
-
 ```python
 a = 2
 assert a == 1, "HH"
