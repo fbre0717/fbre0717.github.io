@@ -16,8 +16,8 @@ img: ""
 #comments_disable: true
 
 # publish date
-date: "`r format(Sys.Date())`"
-# date: 2023-03-19 20:00:00 +0900
+# date: "`r format(Sys.Date())`"  => 오류
+date: 2023-03-19 20:30:00 +0900
 
 # seo
 # if not specified, date will be used.
