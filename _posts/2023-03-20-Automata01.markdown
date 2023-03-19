@@ -1,0 +1,105 @@
+---
+# multilingual page pair id, this must pair with translations of this page. (This name must be unique)
+lng_pair: id_Examples
+title: 오토마타와 형식언어 01
+
+# post specific
+# if not specified, .name will be used from _data/owner/[language].yml
+# author: Mr. Green's Workshop
+# multiple category is not supported
+category: 오토마타와 형식언어
+# multiple tag entries are possible
+tags: [오토마타, 형식언어]
+# thumbnail image for post
+img: ""
+# disable comments on this page
+#comments_disable: true
+
+# publish date
+# date: "`r format(Sys.Date())`"  => 오류
+date: 2023-03-20 03:00:00 +0900
+
+# seo
+# if not specified, date will be used.
+#meta_modify_date: 2022-02-10 08:11:06 +0900
+# check the meta_common_description in _data/owner/[language].yml
+#meta_description: ""
+
+# optional
+# please use the "image_viewer_on" below to enable image viewer for individual pages or posts (_posts/ or [language]/_posts folders).
+# image viewer can be enabled or disabled for all posts using the "image_viewer_posts: true" setting in _data/conf/main.yml.
+#image_viewer_on: true
+# please use the "image_lazy_loader_on" below to enable image lazy loader for individual pages or posts (_posts/ or [language]/_posts folders).
+# image lazy loader can be enabled or disabled for all posts using the "image_lazy_loader_posts: true" setting in _data/conf/main.yml.
+#image_lazy_loader_on: true
+# exclude from on site search
+#on_site_search_exclude: true
+# exclude from search engines
+#search_engine_exclude: true
+# to disable this page, simply set published: false or delete this file
+#published: false
+---
+
+<!-- outline-start -->
+
+오토마타와 형식언어 01 DFA(결정적 유한 오토마타)
+
+<!-- outline-end -->
+
+# DFA(Deterministic Finite Accepter)
+1. `DFA`
+    `Deterministic`이므로 `transition function`에 따라 고정적으로 다음 `state`로 전이된다. 또한 `Accepter`이므로 yes or no를 출력한다.
+
+    $M = (Q,\Sigma, \delta, q_0, F)$
+
+    순서대로 `internal states`, `input alphabet`, `transition function`, `initial state`, `final states`를 의미한다.
+
+    $\delta = Q \times \Sigma $
+
+    다음의 예시를 보도록 하겠다.
+
+    $M = (\{q_0,q_1,q_2\},\{0,1\}, \delta, q_0, \{q_1\})$
+
+    $\delta(q_0,0)=q_0,\delta(q_0,1)=q_1$
+
+    $\delta(q_1,0)=q_0,\delta(q_1,1)=q_2$
+
+    $\delta(q_2,0)=q_2,\delta(q_2,1)=q_1$
+
+    이러한 상황에서 101를 입력하게되면 전이 함수를 따라 이동하여
+    $q_0->q_1->q_0->q_1$
+
+    `final state`에 도달하게 되고, `Accepted`.
+    하지만 100을 입력하게되면
+    $q_0->q_1->q_0->q_0$
+
+    `final state`에 도달하지 못하여 `Rejected`.
+
+2. `Extended Transition Function`
+
+    $\delta^*=Q \times \Sigma^*->Q$
+
+    이것은 그냥 전이 함수에 `state`와 `symbol`이 아닌 `state`와 `string`을 넣어서 간단하게 표현하는 것이다.
+
+    다음과 같은 전이 함수가 있다면 `Extended transition function`은 다음과 같이 계산된다.
+
+    $\delta(q_0,a)=q_1,\delta(q_1,b)=q_2$
+
+    $\delta^*(q_0,ab)=\delta(\delta^*(q_0,a),b)=\delta(q_1,b)=q_2$
+
+3. `Language`
+   DFA에 의해 Accept되는 모든 String의 집합이다.
+
+   $L(M)=\{w\in\Sigma^*:\delta^*(q_0,w)\in F\}$
+   
+   즉, 전이 함수를 따라 계속 다음 `state`로 진행하였을 때 최종적으로 `final states`에 도달하게 하는 모든 `string`을 원소로 갖는 집합이 `Language`이다.
+   
+   `Complement`는 다음과 같다.
+
+   $\overline{L(M)}=\{w\in\Sigma^*:\delta^*(q_0,w)\notin F\}$
+
+   `Trap State` : 어떠한 문자를 입력해도 그 state에서 벗어날 수 없는 `state`를 말한다.
+
+4. `Regular Languages`
+   
+   어떠한 `Launguage`에 대하여 $L=L(M)$을 만족하는 `DFA`가 존재한다면 그것을 `regular`라고 한다.
