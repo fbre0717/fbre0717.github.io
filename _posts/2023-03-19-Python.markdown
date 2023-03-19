@@ -1,0 +1,84 @@
+---
+# multilingual page pair id, this must pair with translations of this page. (This name must be unique)
+lng_pair: id_Examples
+title: Python function
+
+# post specific
+# if not specified, .name will be used from _data/owner/[language].yml
+# author: Mr. Green's Workshop
+# multiple category is not supported
+category: Python
+# multiple tag entries are possible
+tags: [Python]
+# thumbnail image for post
+img: ""
+# disable comments on this page
+#comments_disable: true
+
+# publish date
+date: 2022-03-19 19:11:06 +0900
+
+# seo
+# if not specified, date will be used.
+#meta_modify_date: 2022-02-10 08:11:06 +0900
+# check the meta_common_description in _data/owner/[language].yml
+#meta_description: ""
+
+# optional
+# please use the "image_viewer_on" below to enable image viewer for individual pages or posts (_posts/ or [language]/_posts folders).
+# image viewer can be enabled or disabled for all posts using the "image_viewer_posts: true" setting in _data/conf/main.yml.
+#image_viewer_on: true
+# please use the "image_lazy_loader_on" below to enable image lazy loader for individual pages or posts (_posts/ or [language]/_posts folders).
+# image lazy loader can be enabled or disabled for all posts using the "image_lazy_loader_posts: true" setting in _data/conf/main.yml.
+#image_lazy_loader_on: true
+# exclude from on site search
+#on_site_search_exclude: true
+# exclude from search engines
+#search_engine_exclude: true
+# to disable this page, simply set published: false or delete this file
+#published: false
+---
+
+<!-- outline-start -->
+
+Python 함수 정리
+
+<!-- outline-end -->
+
+# Python 함수 정리
+
+1. 콜론(:), 화살표(->)
+```python
+def sample(x:int) -> bool
+  if(x==1):
+    return False
+  else:
+    return True
+```
+콜론(:)은 함수의 인자의 타입에 대해 주석을 달아주는 것이고, 화살표(->)는 함수의 반환 값의 타입에 대해 주석을 달아주는 것이다.
+
+
+2. with open(파일 경로) as 이름
+```python
+with open("abc.txt") as file:
+  file.write("abcabc")
+```
+경로에 있는 파일을 열고 일을 마치면 자동으로 파일을 닫아준다.
+
+3. assert [조건식], [메시지]
+조건식이 True면 메시지를 출력하지 않고, False라면 AssertionError와 함께 메시지를 출력한다.
+
+```python
+a = 1
+assert a == 1, "HH"
+```
+이 경우 조건이 True이기 때문에 메시지를 출력하지 않는다.
+
+```python
+a = 2
+assert a == 1, "HH"
+```
+하지만 이 경우에서는 조건이 False이기 때문에 메시지를 출력한다.
+```
+AssertionError: HH
+```
