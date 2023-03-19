@@ -50,10 +50,10 @@ Python 콜론(:), 화살표(->), with open as, assert
 1. 콜론(:), 화살표(->)
 ```python
 def sample(x:int) -> bool
-  if(x==1):
-    return False
-  else:
-    return True
+    if(x==1):
+        return False
+    else:
+        return True
 ```
 콜론(:)은 함수의 인자의 타입에 대해 주석을 달아주는 것이고, 화살표(->)는 함수의 반환 값의 타입에 대해 주석을 달아주는 것이다.
 
@@ -61,7 +61,7 @@ def sample(x:int) -> bool
 2. with open(파일 경로) as 이름
 ```python
 with open("abc.txt") as file:
-  file.write("abcabc")
+    file.write("abcabc")
 ```
 경로에 있는 파일을 열고 일을 마치면 자동으로 파일을 닫아준다.
 
