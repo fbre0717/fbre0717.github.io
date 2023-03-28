@@ -1,0 +1,79 @@
+---
+# multilingual page pair id, this must pair with translations of this page. (This name must be unique)
+lng_pair: Automata03
+title: 오토마타와 형식언어 03
+
+# post specific
+# if not specified, .name will be used from _data/owner/[language].yml
+# author: Mr. Green's Workshop
+# multiple category is not supported
+category: 오토마타와 형식언어
+# multiple tag entries are possible
+tags: [오토마타, 형식언어]
+# thumbnail image for post
+img: ""
+# disable comments on this page
+#comments_disable: true
+
+# publish date
+# date: "`r format(Sys.Date())`"  => 오류
+date: 2023-03-26 23:50:00 +0900
+
+# seo
+# if not specified, date will be used.
+#meta_modify_date: 2022-02-10 08:11:06 +0900
+# check the meta_common_description in _data/owner/[language].yml
+#meta_description: ""
+
+# optional
+# please use the "image_viewer_on" below to enable image viewer for individual pages or posts (_posts/ or [language]/_posts folders).
+# image viewer can be enabled or disabled for all posts using the "image_viewer_posts: true" setting in _data/conf/main.yml.
+#image_viewer_on: true
+# please use the "image_lazy_loader_on" below to enable image lazy loader for individual pages or posts (_posts/ or [language]/_posts folders).
+# image lazy loader can be enabled or disabled for all posts using the "image_lazy_loader_posts: true" setting in _data/conf/main.yml.
+#image_lazy_loader_on: true
+# exclude from on site search
+#on_site_search_exclude: true
+# exclude from search engines
+#search_engine_exclude: true
+# to disable this page, simply set published: false or delete this file
+#published: false
+---
+
+<!-- outline-start -->
+
+오토마타와 형식언어 03 NFA(비결정적 유한 오토마타)
+
+<!-- outline-end -->
+
+# NFA(Nondeterministic Finite Accepter)
+1. `NFA`
+    
+    DFA와의 차이점은 같은 `input`에 대해 `transition function`이 여러 개인 경우 그 중에 임의로 한 가지를 따라 다음 `state`로 이동한다.
+
+    $$M = (Q,\Sigma, \delta, q_0, F)$$
+
+    순서대로 `internal states`, `input alphabet`, `transition function`, `initial state`, `final states`를 의미한다.
+
+    $$\delta = Q \times (\Sigma \cup\{\lambda\})->2^Q$$
+
+
+2. `Lambda Transition Function`
+
+    $$\delta(q_0,\lambda)=q_1$$
+    즉 문자열을 input 받지 않아도 임의로 다음 state로 전이되는 함수를 말하고, NFA에서만 존재하는 개념이다.
+    이 때 `vertice` `vi`에서 `vj`로 가기 위해 거치는 `lambda edge`이 A개 있고, input이 w라면 이 때 length는 최대 `A + (A+1)w`이다.
+
+3. `Extended Transition Function`
+    $$\delta^*(q_i,w)=Q_j$$
+    이 때 DFA와는 다르게, `qi`에서 출발하여 도달할 수 있는 모든 `state`들의 집합을 Qj라고 한다.
+
+4. `accepted Language`
+   DFA에 의해 Accept되는 모든 String의 집합이다.
+
+   $$L(M)=\{w\in\Sigma^*:\delta^*(q_0,w)\cap F\not ={\varnothing} \}$$
+   
+   전이 함수를 따라 계속 다음 `state`로 진행하였을 때 최종적으로 `final states`에 도달하게 하는 path가 한 가지라도 존재하는 모든 `string`을 원소로 갖는 집합이 `Language`이다. 
+
+5. `NFA vs DFA`
+    NFA와 DFA는 본질적으로는 같다. 그러나 복잡한 automata를 표현할 때 NFA가 더 쉽고, NFA graph가 더 이해하기 쉽다.
