@@ -7,14 +7,14 @@ source "https://rubygems.org"
 group :jekyll_plugins do
   gem "jekyll-paginate", "~> 1.1.0"
   gem "jekyll-redirect-from", "~> 0.16.0"
-  gem "jekyll-coffeescript",
-  gem "jekyll-default-layout",
-  gem "jekyll-gist",
-  gem "jekyll-github-metadata",
-  gem "jekyll-optional-front-matter",
-  gem "jekyll-readme-index",
-  gem "jekyll-titles-from-headings",
-  gem "jekyll-relative-links",
+  gem "jekyll-coffeescript"
+  gem "jekyll-default-layout"
+  gem "jekyll-gist"
+  gem "jekyll-github-metadata"
+  gem "jekyll-optional-front-matter"
+  gem "jekyll-readme-index"
+  gem "jekyll-titles-from-headings"
+  gem "jekyll-relative-links"
 end
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
