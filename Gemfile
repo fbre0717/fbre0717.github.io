@@ -4,10 +4,18 @@ source "https://rubygems.org"
 #gem "jekyll", "~> 3.9.0", group: :jekyll_plugins
 
 # If you have any plugins, put them here!
-# group :jekyll_plugins do
-#   gem "jekyll-paginate", "~> 1.1.0"
-#   gem "jekyll-redirect-from", "~> 0.16.0"
-# end
+group :jekyll_plugins do
+  gem "jekyll-paginate", "~> 1.1.0"
+  gem "jekyll-redirect-from", "~> 0.16.0"
+  gem "jekyll-coffeescript",
+  gem "jekyll-default-layout",
+  gem "jekyll-gist",
+  gem "jekyll-github-metadata",
+  gem "jekyll-optional-front-matter",
+  gem "jekyll-readme-index",
+  gem "jekyll-titles-from-headings",
+  gem "jekyll-relative-links",
+end
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
