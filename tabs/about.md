@@ -41,6 +41,6 @@ img: ":about.jpg"
 # 영원히 기억해 약속
 블로그 열심히 해보겠습니다.
 
-[20185014_CV](https://github.com/fbre0717/fbre0717.github.io/blob/main/20185014_CV.pdf?raw=True)
+[20185014_CV](https://github.com/fbre0717/fbre0717.github.io/blob/main/20185014_rezume_20230403.pdf?raw=True)
 
 [20185014_Transcript](https://github.com/fbre0717/fbre0717.github.io/blob/main/20185014_Transcript.pdf?raw=True)
