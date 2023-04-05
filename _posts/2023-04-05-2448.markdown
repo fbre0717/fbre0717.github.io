@@ -171,7 +171,6 @@ def two(N):
         for star in stars:
             L.append(star + " " + star)
         return L
-
 N = int(input())
 line = two(N)
 print('\n'.join(line))
