@@ -1,0 +1,178 @@
+---
+# multilingual page pair id, this must pair with translations of this page. (This name must be unique)
+lng_pair: 2448
+title: 백준 2448번
+
+# post specific
+# if not specified, .name will be used from _data/owner/[language].yml
+# author: Mr. Green's Workshop
+# multiple category is not supported
+category: 코딩테스트
+# multiple tag entries are possible
+tags: [백준, 재귀, 분할정복]
+# thumbnail image for post
+img: "https://www.acmicpc.net/problem/2448"
+# disable comments on this page
+#comments_disable: true
+
+# publish date
+date: 2023-04-05 22:00:00 +0900
+
+# seo
+# if not specified, date will be used.
+#meta_modify_date: 2022-02-10 08:11:06 +0900
+# check the meta_common_description in _data/owner/[language].yml
+#meta_description: ""
+
+# optional
+# please use the "image_viewer_on" below to enable image viewer for individual pages or posts (_posts/ or [language]/_posts folders).
+# image viewer can be enabled or disabled for all posts using the "image_viewer_posts: true" setting in _data/conf/main.yml.
+#image_viewer_on: true
+# please use the "image_lazy_loader_on" below to enable image lazy loader for individual pages or posts (_posts/ or [language]/_posts folders).
+# image lazy loader can be enabled or disabled for all posts using the "image_lazy_loader_posts: true" setting in _data/conf/main.yml.
+#image_lazy_loader_on: true
+# exclude from on site search
+#on_site_search_exclude: true
+# exclude from search engines
+#search_engine_exclude: true
+# to disable this page, simply set published: false or delete this file
+#published: false
+---
+
+<!-- outline-start -->
+
+재귀, 분할정복
+
+<!-- outline-end -->
+
+# 백준 2448 별 찍기 - 10
+## 문제
+예제를 보고 규칙을 유추한 뒤에 별을 찍어 보세요.
+## 입력
+첫째 줄에 N이 주어진다. N은 항상 3×2k 수이다. (3, 6, 12, 24, 48, ...) (0 ≤ k ≤ 10, k는 정수)
+## 출력
+첫째 줄부터 N번째 줄까지 별을 출력한다.
+## 예제입력1
+```
+24
+```
+## 예제출력1
+```
+                       *                        
+                      * *                       
+                     *****                      
+                    *     *                     
+                   * *   * *                    
+                  ***** *****                   
+                 *           *                  
+                * *         * *                 
+               *****       *****                
+              *     *     *     *               
+             * *   * *   * *   * *              
+            ***** ***** ***** *****             
+           *                       *            
+          * *                     * *           
+         *****                   *****          
+        *     *                 *     *         
+       * *   * *               * *   * *        
+      ***** *****             ***** *****       
+     *           *           *           *      
+    * *         * *         * *         * *     
+   *****       *****       *****       *****    
+  *     *     *     *     *     *     *     *   
+ * *   * *   * *   * *   * *   * *   * *   * *  
+***** ***** ***** ***** ***** ***** ***** *****
+```
+# Idea
+
+'\*'를 원소로 갖는 N*N 배열을 생성하여 특정 조건을 만족시키는 index를 ' '으로 변환해주려고 했다.
+
+우선 문제를 보면 재귀를 이용해야한다는 느낌은 들지만 재귀를 어떻게 이용해야할지 판단하기 어려웠다. 
+
+`재귀는 이전 단계를 이용해서 다음 단계로 가야한다`
+
+추가로, 이러한 문제는 배열보다는 문자열을 이용하는 것이 좋다고 느껴진다.
+
+공백을 세기 편하도록 *대신 T와 U로 표현하였다.
+
+1. N = 3일 때 문자열은 다음과 같다.
+```
+00100
+01010
+11111
+```
+2. N = 6일 때 문자열은 다음과 같다.
+```
+00000100000
+00001010000
+00011111000
+00100000100
+01010001010
+11111011111
+```
+3. 1번을 이용해서 2번을 만들어보자. 1번으로 바꿀 수 있는 부분을 바꾸도록 하였다.
+```
+000-----000
+000-----000
+000-----000
+-----0-----
+-----0-----
+-----0-----
+```
+4. 1번을 사용할 수 있는 부분을 -으로 바꾸었더니 위에 3줄에는 좌우로 0을 3칸씩 추가해주면 되고, 아래 3줄에서는 1번을 입력한 후 0을 추가해주고 다시 1번을 입력해주면 된다.
+
+5. 규칙을 파악했으니, 정확한 개수를 파악하면 된다. N = 3일 때 가로가 5(=3\*2-1)이고, N = 6일 때 가로가 11(=6\*2-1)이었으므로, N = 12일 때는 가로를 23(=12\*2-1)이라고 생각할 수 있다.
+
+6. N = 12일 때 문자열은 다음과 같다.
+```
+000000-----------000000
+000000-----------000000
+000000-----------000000
+000000-----------000000
+000000-----------000000
+000000-----------000000
+-----------0-----------
+-----------0-----------
+-----------0-----------
+-----------0-----------
+-----------0-----------
+-----------0-----------
+``` 
+
+
+# Implementation
+1. 이전 단계를 이용해서 다음 단계를 구성해야하는데, 이번 문제에서는 한 줄을 리스트의 원소에 넣는다.
+2. 가장 기본인 유닛을 정해야하는데, N = 1일 때를 생각해서 규칙을 정해도 되고, 모르겠다면 N = 3일 때 `["  *  ", " * * ", "*****"]`를 갖는 것으로 생각해도 된다.
+3. 위에서 생각했듯이, N = 6을 구성하는 단계를 크게 2가지로 나눌 수 있다. 첫번째 단계는 위의 3줄을, 두번째 단계에서는 아래 3줄을 구성한다.
+4. 먼저 이전단계의 리스트를 `stars = two(N//2)`를 이용하여 호출하고, 빈 리스트를 만든다. 이 리스트에는 이전 단계의 그림을 한 줄씩 원소로 갖고있다.
+5. 위의 3줄을 만들기 위해서 stars에서 한 원소씩 뽑고 `" "*(N//2) + star + " "*(N//2)`를 이용하여 새로운 한 줄을 만들어준다. N = 6인 경우 `000`+`기존5칸`+`000`을 3번 반복해서 위의 3줄을 완성한다.
+6. 마찬가지로 `star + " " + star`를 이용하여 아래 3줄을 완성해준다. N = 6인 경우 `기존5칸` + ` ` + `기존5칸`이 되어 완성된다.
+7. 마지막에 리스트의 각 원소를 한 줄 씩 띄어서 출력해야 그림이 완성되는데, `'\n'.join()`를 이용하면 리스트의 각 원소들을  `'\n' `를 이용하여 이어붙일 수 있다.
+```python
+list1 = ['a','b','c','d']
+line = '\n'.join(list1)
+# line = 'a\nb\nc\nd'
+print(line)
+# a
+# b
+# c
+# d
+```
+# Code
+```python
+def two(N):
+    if(N==3):
+        return ["  *  ", " * * ", "*****"]
+    else:
+        stars = two(N//2)
+        L = []
+        for star in stars:
+            L.append(" "*(N//2) + star + " "*(N//2))
+        for star in stars:
+            L.append(star + " " + star)
+        return L
+
+N = int(input())
+line = two(N)
+print('\n'.join(line))
+```
