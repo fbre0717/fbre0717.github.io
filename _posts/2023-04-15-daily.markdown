@@ -71,9 +71,11 @@ https://recruit.navercorp.com/micro/teamnaver/tech
 3. 계획을 다 짜고 코딩 하기 vs 일단 코딩하면서 생각하기
 
 ## P.S.
-소프트웨어마에스트로 코딩테스트 이후 매일하여ㄴ 백준 골드 4 달성 & 1000점 달성
+소프트웨어마에스트로 코딩테스트 이후 꾸준히 해서 백준 골드 4 달성 & 1000점 달성
 
+<img src="..\assets\img\posts\BOJ_1000.png" title="BOJ_1000"/>
+<!-- <img src="..\assets\img\posts\BOJ_1000.png" width="584px" height="448px" title="BOJ_1000"/> -->
 
-<img src="assets\img\posts\BOJ_1000.png" width="584px" height="448px" title="BOJ_1000"/>
+![BOJ_1000](:BOJ_1000.png){:data-align="center"}
 
-![BOJ_1000](:post_BOJ_1000.png){:data-align="center"}
+![such a lovely place](:post_pic1.jpg){:data-align="center"}
