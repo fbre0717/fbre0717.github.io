@@ -1,0 +1,79 @@
+---
+# multilingual page pair id, this must pair with translations of this page. (This name must be unique)
+lng_pair: 20230415
+title: 2023 팀네이버 신입 공채 코딩테스트 후기
+
+# post specific
+# if not specified, .name will be used from _data/owner/[language].yml
+# author: Mr. Green's Workshop
+# multiple category is not supported
+category: 취업준비
+# multiple tag entries are possible
+tags: [코딩테스트, 네이버]
+# thumbnail image for post
+# img: "https://www.acmicpc.net/problem/2448"
+# disable comments on this page
+#comments_disable: true
+
+# publish date
+date: 2023-04-15 22:00:00 +0900
+
+# seo
+# if not specified, date will be used.
+#meta_modify_date: 2022-02-10 08:11:06 +0900
+# check the meta_common_description in _data/owner/[language].yml
+#meta_description: ""
+
+# optional
+# please use the "image_viewer_on" below to enable image viewer for individual pages or posts (_posts/ or [language]/_posts folders).
+# image viewer can be enabled or disabled for all posts using the "image_viewer_posts: true" setting in _data/conf/main.yml.
+#image_viewer_on: true
+# please use the "image_lazy_loader_on" below to enable image lazy loader for individual pages or posts (_posts/ or [language]/_posts folders).
+# image lazy loader can be enabled or disabled for all posts using the "image_lazy_loader_posts: true" setting in _data/conf/main.yml.
+#image_lazy_loader_on: true
+# exclude from on site search
+#on_site_search_exclude: true
+# exclude from search engines
+#search_engine_exclude: true
+# to disable this page, simply set published: false or delete this file
+#published: false
+---
+
+<!-- outline-start -->
+
+팀네이버 신입 공채 코딩테스트
+
+<!-- outline-end -->
+https://recruit.navercorp.com/micro/teamnaver/tech
+
+4학년 1학기가 되고, 대학원이 아닌 취업으로 진로를 결정하게 되었는데, 갑작스레 진로를 변경하게 되어서 준비가 안되어있는 상태였다. 2월달에 급하게 소프트웨어마에스트로 지원을 한 것이 아마 취업으로의 첫 발걸음이었을 것이다. 최소 400자, 최대 3000자 분량의 자기소개서를 500자만 작성하고 지원했다..ㅎㅎ
+
+그 때 처음 코딩테스트를 내가 보게될 것이라는 것을 알게 되었고, 백준을 조금 해봤지만 2월까지는 아직 사회가 어떻게 돌아가는지 알지못했고 사실 그냥 놀았다. 아주 조금 해서 실버 4를 달성했고, 1차 코테에 응시하였는데 1번문제를 풀어서(?) 운좋게 2차 응시자격이 되었다.
+
+하지만... 2차 코테에서는 1문제를 풀었는지도 잘 모르겠고, 2번 문제는 구현도 제대로 못하고 시간이 지나갔다.. 이 때 당시에는 자료구조와 알고리즘 수업은 들었지만 입대 전인 관계로 하나도 모른 상태로 응시했었다. 솔직히 말하자면 1차도 그냥 기분좋으라고 다 붙혀준게 아닌가 싶은 생각이 들었고, 취업을 하려면 결국 학사나 석사나 코딩테스트는 필수니까 코딩테스트 공부를 하기로 마음먹었다.
+
+그렇게 코딩테스트 공부를 시작한지 1달이 넘었고, 어느덧 골드4를 달성하였다. 하지만 골드4를 달성하였다고 해서 골드 문제를 쉽게 풀 수 있는 것은 아니었고, 실버 문제도 어려운 것들이 많이 있었다. 특히, 시간 내에 풀어야하는 코딩테스트 특성상 풀었다-가 중요한 것이 아니라 ~시간 내에 풀었다-가 중요하다고 생각이 들었다.
+
+# 2023 팀네이버 신입 공채 코딩테스트
+총 4문제가 나왔으며, 1번은 구현, 2번은 DP, 3번은 greedy로 추정되고, 4번은 잘 모르겠다. 시간은 2시간이었으며, 프로그래머스로 응시하였고 A4 1장을 허용하였다. 코딩테스트에 나오는 문제들은 문제 길이가 길기 때문에 읽는 데에도 많은 시간을 투자하였다. 1번부터 4번까지 간단히 읽으면서 견적을 재보고, 어느 알고리즘을 사용해야할지 생각을 했었다. 1번은 구현이었고, 2, 3번은 DP, greedy라고 추정은 하였지만 정확한 풀이법은 생각이 나지 않았고, 4번은 카테고리조차 모르겠었다. 
+
+일단 이러한 생각들을 하니 한 20분 정도가 지나있었고, 1번을 1시간 동안 풀었다. 1번을 풀면서 생각했던 것은, 시간에 따라 변화하는 문제를 푸는 것이 아직 서툴다는 것이었다. 처음에는 input을 어떻게 가공해야할지도 고민을 했었고, 시간 변수를 새로 생성하며 반복문을 돌리면서 시간 변수를 1씩 증가시켜 시간의 흐름을 구현하였는데, 이 부분은 더욱 연습이 필요하다고 생각한다.
+
+또한 특정 변수를 이용해서 다른 변수를 계산한 이후에 그 특정 변수를 초기화해주어야하는데, 초기화부터 해주고 다른 변수를 계산하는 바람에 예기치 못한 결과가 나왔다. 위에서 아래로 내려가는 코드의 기본조차 잊는 실수를 하여 시간 소모가 컸다. 또한, 평소에는 VScode로 코딩을 하다보니, 자동완성 기능도 있고, 중간에 디버깅을 위해서 새로운 파일을 만들거나 ipynb 셀을 이용해서 디버깅을 하는 편이었는데, 프로그래머스에서는 그 부분이 어렵기 때문에 print()를 이용해서 손수 디버깅을 하는데에 시간을 많이 소모했다고 생각했다. 그 결과, 1번 문제를 풀고나니 1시간 10분이 지나있었다.
+
+그 다음에는 2번과 3번 중에서 무엇을 풀어야할지 고민을 하였다. 둘 다 푸는 것은 절대 무리였고, 당장 둘 다 풀이가 떠오르지는 않아서 2번부터 풀이를 고민하였는데 잘 안될 것 같아서 문제 이해가 좀 덜 된 3번으로 넘어갔다. 2번 보다는 쉬운 것 같아서 3번 문제를 이해하면서 풀이를 써내려갔다. 아마 이 때가 1시간 20분정도 지났었던 것 같다. 코딩을 하기 전에, 최대한 알고리즘을 다 손으로 구현하고 작성하려고 했는데 시간이 없어서 도중에 코딩을 시작하였고, 기본 문제 상황은 구현했는데, 지속적으로 발생하는 업데이트를 고려할 방법이 떠오르지 않아 그대로 시험 종료되었다.
+
+그래도 첫 코테 때는 문제를 봐도 어떤 알고리즘인지도 몰랐는데 그래도 지금은 알고리즘도 어느 정도 생각했고, 방향성은 찾았으니 발전은 확실히 했다고 느낀다. 어제 급하게 DFS, BFS, Binary Search 기본 코드 다 외웠는데 정작 쓸 일은 없었다ㅎㅎ
+
+## 개선해야할 점
+1. 빠르게 문제 읽고 어떤 알고리즘을 사용할지, 어느 정도 난이도인지 파악하기
+2. 사소한 실수 줄이기, 디버깅 연습하기
+3. 계획을 다 짜고 코딩 하기 vs 일단 코딩하면서 생각하기
+
+## P.S.
+소프트웨어마에스트로 코딩테스트 이후 매일하여ㄴ 백준 골드 4 달성 & 1000점 달성
+
+
+<img src="assets\img\posts\BOJ_1000.png" width="584px" height="448px" title="BOJ_1000"/>
+
+![BOJ_1000](:post_BOJ_1000.png){:data-align="center"}
