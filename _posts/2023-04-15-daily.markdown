@@ -16,7 +16,7 @@ tags: [코딩테스트, 네이버]
 #comments_disable: true
 
 # publish date
-date: 2023-04-15 22:00:00 +0900
+date: 2023-04-15 23:00:00 +0900
 
 # seo
 # if not specified, date will be used.
@@ -76,6 +76,4 @@ https://recruit.navercorp.com/micro/teamnaver/tech
 <img src="..\assets\img\posts\BOJ_1000.png" title="BOJ_1000"/>
 <!-- <img src="..\assets\img\posts\BOJ_1000.png" width="584px" height="448px" title="BOJ_1000"/> -->
 
-![BOJ_1000](:BOJ_1000.png){:data-align="center"}
-
-![such a lovely place](:post_pic1.jpg){:data-align="center"}
+<!-- ![BOJ_1000](:BOJ_1000.png){:data-align="center"} -->
