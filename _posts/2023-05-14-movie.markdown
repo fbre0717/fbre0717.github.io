@@ -1,0 +1,113 @@
+---
+# multilingual page pair id, this must pair with translations of this page. (This name must be unique)
+lng_pair: 20230514
+title: 나는 내일, 어제의 너와 만난다
+
+# post specific
+# if not specified, .name will be used from _data/owner/[language].yml
+# author: Mr. Green's Workshop
+# multiple category is not supported
+category: 영화
+# multiple tag entries are possible
+tags: [영화, 로맨스, 멜로]
+# thumbnail image for post
+# img: "https://www.acmicpc.net/problem/2448"
+# disable comments on this page
+#comments_disable: true
+
+# publish date
+date: 2023-05-14 15:00:00 +0900
+
+# seo
+# if not specified, date will be used.
+#meta_modify_date: 2022-02-10 08:11:06 +0900
+# check the meta_common_description in _data/owner/[language].yml
+#meta_description: ""
+
+# optional
+# please use the "image_viewer_on" below to enable image viewer for individual pages or posts (_posts/ or [language]/_posts folders).
+# image viewer can be enabled or disabled for all posts using the "image_viewer_posts: true" setting in _data/conf/main.yml.
+#image_viewer_on: true
+# please use the "image_lazy_loader_on" below to enable image lazy loader for individual pages or posts (_posts/ or [language]/_posts folders).
+# image lazy loader can be enabled or disabled for all posts using the "image_lazy_loader_posts: true" setting in _data/conf/main.yml.
+#image_lazy_loader_on: true
+# exclude from on site search
+#on_site_search_exclude: true
+# exclude from search engines
+#search_engine_exclude: true
+# to disable this page, simply set published: false or delete this file
+#published: false
+---
+
+<!-- outline-start -->
+
+나는 내일, 어제의 너와 만난다
+
+<!-- outline-end -->
+
+
+## 후기
+
+“나는 내일, 어제의 너와 만난다” 처음 제목을 보았을 때는 이게 무슨 소리지 싶었고, 다시 제목을 보았을 때는 어느 정도 영화의 설정이 그려졌다. 설정과 결말을 어느정도 예상하고 봤지만, 몰입이 잘되서 결말따위는 잊게 만들었다. “라라랜드”, “500일의 썸머”와 함께 별5개를 줄 수 있는 인생 영화라고 생각한다.
+
+### 결말이 정해져 있는 이야기를 끝까지 적을 수 있을까?
+
+영화 “동감”에서도 깊게 고민하게 만든 주제였다. 결말을 아는 이야기를 끝까지 써내려갈지, 의미가 없다고 생각해서 도중에 그만 둘지는 본인의 선택이지만, 결말을 아는 것만큼 슬픈 일은 없다고 생각한다. 짧게 보면 이별, 길게보면 우리는 모두 언제가는 죽음을 맞이할 것이다. 이별이 두렵다고 시작조차하지 않는 것만큼 미련한 행동이 있을까? 결말이 정해져있을 수도 있고, 그 결말을 맞이할 시간마저 정해져있을 수도 있다. 대부분의 경우 결말은 알지만 그 시간을 정확히 유추할 수는 없다. 그렇기 때문에 사람들이 매일 살아가게 되지 않을까? 슬픈 결말을 알면서도 남은 이야기를 기쁘게 써내는 것이 우리가 가져야할 마음가짐이지 않을까?
+
+### 미래를 모르기에 불안해하지만, 미래를 알면 더 초조해할 것이다.
+
+최근에는 불확실한 미래 때문에 정말 많은 고민을 하였다. 지금 내가 하는 행동이 나의 미래에 어떤 영향을 끼칠지 모르고, 나의 미래가 어떻게 될지 전혀 몰라 막연한 두려움이 있었고, 미래에 대해 알고 싶었다. 하지만 이 영화를 보면서, 미래를 알고 있다면 나 스스로를 가두고, 사는 의미가 있을까 생각이 든다. 미래를 모르기 때문에 인간은 더 다양한 가능성을 가지고 즐겁게 살아가는 것이 아닐까? 
+
+하지만 현재 나의 행동이 미래에 어떤 영향을 미치는지 정도는 알려줬으면 좋겠다? 아닌가? 미래는 불확실하기 때문에 인생이 더 재미있는 것일까? 사실 인류는 인생이라는 복잡한 환경에 정확히 알고 있는 것이 아니기 때문에 모든 변수를 통제하며 계획을 세우는 것은 불가능하고, 불확실함에 인생을 맡기는 것이 좋은 마음가짐인 것 같기도 하다.
+
+### cf
+
+최근에 봤던 영화인 “500일의 썸머”가 생각이 났다. 상대가 노력을 한다면 나는 운명으로 받아들일 수 있고, 내가 노력한다면 상대는 운명으로 받아들일 수 있다는 것을 다시 떠올렸다.
+
+## 인용
+
+> “저기요, 또 만날 수 있을까요?”’
+> 
+> 
+> “다시 만날 수 있어요”
+> 
+> “내일 또 봐요”
+> 
+> -1일째
+> 
+
+> “맞아. 하나 더 있어. 나… 눈물이 정말 많아.”
+> 
+> 
+> -3일째
+> 
+
+> “그야… 괴로워서 그래. 어제 나와 함께 있던 너를.. 오늘의 너는 몰라. 그뿐만 아니라 지금까지 함께 쌓아 온 추억 모두를 너는 몰라. 점점 그게 느껴져서 힘들어. 너를 만나고 있는데 네가 아닌 것 같아서 함께 있는 게 괴로워. 미안해.”
+> 
+> 
+> -20일째
+> 
+
+> “내가 내일, 그러니까 너한테는 내일 정말 못되게 굴 거야. 하지만 난 이겨냈어. 확실히 이겨냈어.  단순한 거였어. 이토록 괴로워한 것도, 이겨내겠다고 생각한 것도, 너를… 그만큼 사랑하기 때문이야.”
+> 
+> 
+> “내일.. 만날 수 있을까..? 어제의 너를..” 
+> 
+> -21일째
+> 
+
+> “이래서야… 너는 하나도 즐겁지 않잖아. 이렇게 세세하게 대본대로 하면 너는 전혀 즐길 수가 없잖아. 오늘의 너를 만나고 드디어 알았어.  내가 오늘까지 즐거워하고 괴로워하고 수많은 감정을 느낄 수 있었던 건 네가 계속 애써준 덕분이라는 걸 말이야.”
+> 
+> 
+> “그렇지 않아. 어떤 일이 생길지 알고 있어도 즐거운 건 즐거운 거야.”
+> 
+> “미안해. 나도 눈물이 정말 많아.”
+> 
+> -30일째
+> 
+
+> “엇갈리는 게 아니야. 우리는 엇갈리지 않아. 끝과 끝을 맞붙인 고리가 되어 하나로 이어져 있어. 우리 둘은 하나의 생명인 거야.”
+> 
+> 
+> -29, 30일째
+>
